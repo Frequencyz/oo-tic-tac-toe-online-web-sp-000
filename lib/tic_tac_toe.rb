@@ -30,15 +30,15 @@ def move(position, character)
   @board [position] = character
 end
 
-
-
 def vadef position_taken?(board, index)
   if board[index] == " " || board[index] == "" || board[index] == nil
     return false
   else
     return true
   end
-endlid_move?(index)
+end
+
+valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
 end
 
